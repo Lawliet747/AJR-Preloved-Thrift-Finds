@@ -16,7 +16,7 @@
 
     // Paste the "Publish to web" CSV link of your Google Sheet here (see README.md).
     // Leave it empty to use the saved copy in data/items.csv only.
-    sheetCsvUrl: "",
+    sheetCsvUrl: "https://docs.google.com/spreadsheets/d/e/2PACX-1vTRQu2m54XN5mpP3H4l3Yc_yvA-OE4mJLEy4L9P3ulfv65w-KKTGDeGH65Fj2YHkGA54_zHWZnbJymz/pub?gid=855252272&single=true&output=csv",
 
     backupCsv: "data/items.csv",          // the saved copy; refresh it by exporting the sheet as CSV
     photoFolder: "assets/items/",         // item photos live here
