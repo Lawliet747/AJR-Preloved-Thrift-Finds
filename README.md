@@ -2,7 +2,7 @@
 
 A personal shop for pre-loved items, built with plain HTML, CSS and JavaScript. There is no framework and no build step. The listings live in a Google Sheet, and buyers reach out through Messenger.
 
-- **Version:** v0.1.3 (27 November 2026)
+- **Version:** v0.1.4 (28 November 2026)
 - **Name:** "AJR Pre-Loved Finds", for now. To change it, edit `index.html` (the `<title>` and the brand link: `aria-label` and `.brand-name`) and this README.
 
 ## What's on the page
@@ -25,6 +25,7 @@ script.js           Loads the listings, search/filter/sort, item pop-up, Messeng
 data/items.csv      The saved copy of the listings (also used until a sheet is connected)
 assets/
   favicon.svg       Tab icon and header logo
+  og-image.png      Link-preview picture (1200 x 630) shown by Facebook and Messenger
   placeholder.svg   Shown for items with no photo
   items/            Item photos (the sample-*.jpg files are stand-ins: delete them)
 ```
@@ -112,8 +113,8 @@ Everything you may want to change is in the `CONFIG` block at the top of `script
 - [ ] Decide how deals work (payment, meetup spots, shipping) and update "How it works"
 - [ ] Replace the sample rows in `data/items.csv` and the sheet, and delete `assets/items/sample-*.jpg`
 - [ ] Create the Google Sheet, publish it, and paste the link into `script.js`
-- [ ] Add share-preview tags (`og:title`, `og:description`, `og:image`, `og:url`) once the site has its address. Link previews show the shop in general, not one item.
-- [ ] Create the GitHub repo and Cloudflare Pages project
+- [x] Share-preview tags added in v0.1.4 (check the preview in the Facebook Sharing Debugger after each deploy)
+- [x] GitHub repo and Cloudflare Pages project created
 - [ ] Link it from AJR Dev Log as a project card (the CSP for that is a separate step)
 
 ## Publish
@@ -122,6 +123,7 @@ Same as your other sites: push to the `main` branch of a GitHub repo and let Clo
 
 ## Release history
 
+- **v0.1.4 (2026-11-28):** Link-preview tags (Open Graph and Twitter card), a canonical link and a 1200 x 630 share image, so Messenger and Facebook show a picture and the shop name.
 - **v0.1.3 (2026-11-27):** The 11 real item photos were shrunk from 23.3 MB to 1.4 MB and their GPS and camera data removed (same file names, so the CSV is unchanged). Added the photo and location guidance above.
 - **v0.1.2 (2026-11-27):** First real listings (the JJK Banpresto figures and the Gundam Barbatos kit) and the intro wording, by Anthony.
 - **v0.1.1 (2026-11-27):** Shop name set to "AJR Pre-Loved Finds". The header now wraps cleanly on narrow phones. Added the Google Sheets starter file.
